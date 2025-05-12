@@ -45,10 +45,12 @@ const EventDetail = () => {
                 <div className="invitee-info">
                   <span className="invitee-name">{invitee.name}</span>
                   <span className="invitee-email">{invitee.email}</span>
+                  <span className="invitee-id">ID: {invitee.id}</span>
                 </div>
                 <div className={`invitee-response ${invitee.response}`}>
                   {invitee.response}
                 </div>
+
               </div>
             ))}
           </div>

@@ -1,0 +1,60 @@
+@import "../App.css";
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 20px;
+  width: 20vw;
+  background-color: gainsboro;
+  border-radius: 0.2rem;
+  padding: 1.2rem;
+  filter: drop-shadow(-5px 5px 15px #a0a0a0);
+}
+
+input {
+  height: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.1rem;
+}
+
+textarea {
+  resize: none;
+  height: 10vh;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.1rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-btn {
+  width: 5vw;
+  align-self: end;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.date {
+  width: 10vh;
+  align-self: end;
+  text-align: center;
+}
+
+.dateBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.9rem;
+}

@@ -1,38 +1,140 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxs;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-block;
+  background-color: gray;
+  margin: 0.8rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.eventContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.header-btn {
+  text-align: center;
+  width: 5vw;
+  align-self: end;
+  /* margin: 1.5rem 0; */
+}
+.blue {
+  background-color: blue;
+}
+
+.header-btn:hover {
+  transform: translateY(-10px);
+}
+
+.title {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+table {
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  min-width: 50rem;
+  border-radius: 0.8rem;
+  border-collapse: collapse;
+}
+thead tr {
+  background-color: gainsboro;
+}
+
+table th,
+table td {
+  padding: 1.2rem;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgb(218, 218, 218);
+}
+
+.table-btn {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.inviteClmn {
+  display: flex;
+  flex-flow: column;
+}
+ul {
+  display: flex;
+  flex-flow: column;
+}
+
+li {
+  list-style: none;
+  /* margin-bottom: 0.7rem; */
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  align-items: center;
+  gap: 10px;
+}
+li::before {
+  content: "🙍‍♂️";
+}
+
+.evntlist {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.li-btn {
+  width: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 3rem;
+  /* margin-top: 1rem; */
+  color: black;
+  background-color: rgb(160, 159, 159);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  /* border: 1px double black; */
+  transition: 0.3s ease-in-out;
+  /* flex: 50; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.li-btn:hover {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.highlight-text {
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.danger {
+  width: 100px;
+  height: 30px;
+  background-color: pink;
+  border: 1px solid red;
+  color: red;
+}
+
+.success {
+  width: 20rem;
+  height: 30px;
+  background-color: green;
+  border: 1px solid greenyellow;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
 }
